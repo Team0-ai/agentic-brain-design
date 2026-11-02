@@ -1,0 +1,36 @@
+# Agentic brain design - the /learn companion skill
+
+Build, review and measure your own agent memory with your agent, following the [Team0 /learn series](https://team0.ai/learn). Works with MD files, databases, knowledge graphs and existing memory products. Includes implementation exercises, design questions and a scoring tool with synthetic examples.
+
+## Use it
+
+```bash
+npx skills add Team0-ai/agentic-brain-design
+```
+
+Or copy `agentic-brain-design/` into the skills folder your agent supports. The skill can explain the part you are reading, help implement your own design, review a failure or measure an existing setup. Example requests:
+
+- “Walk me through part 1 using my existing Markdown memory.”
+- “Help me implement the changed-date exercise in part 3.”
+- “Compare my MD memory with this database setup on the same questions.”
+- “Review what happens when an employee loses access.”
+
+## Measure before building
+
+The scorer reads saved agent answers; it does not connect to memory products. It judges current correctness, relevance, omissions, ordering and context completeness using the same rubric for every storage format. A good MD-based setup can outperform a database or graph.
+
+Validate the worked example without a key or a paid model call:
+
+```bash
+python3 agentic-brain-design/scripts/score.py agentic-brain-design/scripts/examples/questions.jsonl agentic-brain-design/scripts/examples/before.jsonl --dry-run
+```
+
+For live scoring, install `anthropic>=2.3,<3` and `pydantic>=2,<3`, set `ANTHROPIC_API_KEY` in your environment and follow `agentic-brain-design/references/part-0-test-set.md`. Questions, expected truth and answers are sent to Anthropic and incur charges. Use synthetic/redacted data or the necessary permission. Keep answer keys away from the agent being tested, preserve comparable test conditions and check the judge against human labels. Access and privacy need separate checks.
+
+## Building independently or buying a company install
+
+The lessons and skill help you build your own system. They teach choices, examples and tests rather than a copy of Team0's production implementation.
+
+For a maintained company brain, [Team0 supplies an install in your cloud, with updates and support](https://team0.ai/product?utm_source=github&utm_medium=skill&utm_campaign=learn). Your company controls its infrastructure and provider accounts. [Talk about a company install](https://calendar.app.google/uM9ptyv83Ubgnq226).
+
+By [Yogev Ben-Tov](https://www.linkedin.com/in/ybentov/), founder of [Team0](https://team0.ai). MIT licensed; see [LICENSE](LICENSE).
