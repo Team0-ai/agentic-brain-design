@@ -1,5 +1,7 @@
 # Part 0: build a test set and score any memory
 
+Full article: [Measure before you build](https://team0.ai/learn/measure-before-you-build.md).
+
 Use this for the measurement exercise in /learn, including MD-based setups and comparisons with built-in memory, databases or graphs. The script evaluates saved answers and has no storage-format preference.
 
 ## Establish expected truth

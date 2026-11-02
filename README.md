@@ -1,14 +1,16 @@
 # Agentic brain design - the /learn companion skill
 
-Build, review and measure your own agent memory with your agent, following the [Team0 /learn series](https://team0.ai/learn). Works with MD files, databases, knowledge graphs and existing memory products. Includes implementation exercises, design questions and a scoring tool with synthetic examples.
+Build, review and measure your own agentic brain with your agent, using the principles in the [Team0 /learn series](https://team0.ai/learn). Works with MD files, databases, knowledge graphs and existing memory products. Includes implementation exercises, design questions and a scoring tool with synthetic examples.
 
 ## Use it
+
+Run this command inside the project where you want to use the skill:
 
 ```bash
 npx skills add Team0-ai/agentic-brain-design
 ```
 
-Or copy `agentic-brain-design/` into the skills folder your agent supports. The skill can explain the part you are reading, help implement your own design, review a failure or measure an existing setup. Example requests:
+Or copy `agentic-brain-design/` into the skills folder your agent supports. The skill consults the relevant full /learn article alongside its bundled notes, then helps explain, implement, review or measure your setup. It reads the parts needed for the task. Example requests:
 
 - “Walk me through part 1 using my existing Markdown memory.”
 - “Help me implement the changed-date exercise in part 3.”

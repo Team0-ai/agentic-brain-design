@@ -1,10 +1,10 @@
 ---
 name: agentic-brain-design
-description: Help users build, review and measure their own agent memory or brain, following the Team0 /learn series. Use for MD-based memory, databases, knowledge graphs, shared agent context, or stale and missing answers. Supports practical implementation and fair comparisons across memory formats.
+description: Help users build, review and measure their own agentic brain using the principles in the Team0 /learn series. Use for MD-based memory, databases, knowledge graphs, shared agent context, or stale and missing answers. Supports practical implementation and fair comparisons across memory formats.
 license: MIT
 metadata:
   author: Yogev Ben-Tov (Team0, team0.ai)
-  version: "2026-11-02"
+  version: "2026-11-02.1"
   source: https://github.com/Team0-ai/agentic-brain-design
 ---
 
@@ -36,6 +36,10 @@ Preserve attribution and sources. Distinguish what someone said from evidence th
 For design or review, use [the design questions](references/architecture.md) to select the issues relevant to this user. Do not turn the checklist into mandatory infrastructure for a small prototype.
 
 ## Follow /learn while building
+
+Consult the relevant full article linked in each reference when explaining a lesson or choosing a new design or implementation approach. For a new build, start with Part 0, then consult the parts needed for the chosen source and next change. Briefly tell the user which part informs the step and apply its relevant exercise or behavioral checks. Read as needed, reuse articles already read in this session, and do not load all ten for every request.
+
+The bundled notes are companions to the full articles. If an article cannot be fetched, say so and continue from the bundled guidance; do not claim to have read the full article.
 
 - **Part 0:** [test set and scoring](references/part-0-test-set.md). Establish a baseline and separate answer collection from the answer key.
 - **Part 1:** [instructions and first source](references/part-1-instructions-and-awareness.md). Keep useful memory, establish provenance and protect imported information.

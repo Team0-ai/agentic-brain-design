@@ -1,5 +1,7 @@
 # Part 1: instructions and a first source
 
+Full article: [Instructions and a first source](https://team0.ai/learn/instruction-files-and-a-first-awareness-layer.md).
+
 Read for the first implementation exercise in /learn. Help the user build a small result in the format they choose.
 
 Review instruction files with them. Distinguish conventions for how an agent works from changing knowledge about the work. Preserve useful facts with their sources and dates when reorganizing; do not delete context simply because it is in Markdown. Show proposed file changes first.

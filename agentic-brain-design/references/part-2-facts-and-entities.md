@@ -1,5 +1,7 @@
 # Part 2: facts and entities
 
+Full article: [Facts and entities](https://team0.ai/learn/facts-and-entities.md).
+
 Read when the user is implementing the representation exercise in /learn or reviewing identity mistakes.
 
 Identify the people, companies and work items their questions actually need. Help implement a representation with stable identifiers, readable names, source-backed statements and attribution. This can be files, a database or an existing memory system. Use the article's starter schema if it fits; avoid introducing a graph or a large ontology without a demonstrated need.
